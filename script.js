@@ -51,7 +51,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // Navbar background change on scroll
 const navbar = document.querySelector('.navbar');
-let lastScroll = 0;
 
 window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
@@ -63,8 +62,6 @@ window.addEventListener('scroll', () => {
         navbar.style.backgroundColor = '#ffffff';
         navbar.style.backdropFilter = 'none';
     }
-    
-    lastScroll = currentScroll;
 });
 
 // Intersection Observer for fade-in animations
@@ -145,15 +142,19 @@ window.addEventListener('scroll', () => {
 // Add typing effect to hero title (optional enhancement)
 const heroTitle = document.querySelector('.hero-title');
 if (heroTitle) {
-    const text = heroTitle.innerHTML;
-    heroTitle.innerHTML = '';
+    const originalHTML = heroTitle.innerHTML;
+    const textContent = heroTitle.textContent;
+    heroTitle.textContent = '';
     let i = 0;
     
     function typeWriter() {
-        if (i < text.length) {
-            heroTitle.innerHTML += text.charAt(i);
+        if (i < textContent.length) {
+            heroTitle.textContent += textContent.charAt(i);
             i++;
             setTimeout(typeWriter, 50);
+        } else {
+            // Restore original HTML with styling after typing is complete
+            heroTitle.innerHTML = originalHTML;
         }
     }
     
