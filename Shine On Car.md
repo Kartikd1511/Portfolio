@@ -18,7 +18,8 @@ Backend platform for real-time car wash booking, intelligent washer matching, ge
 10. [Major Functionalities](#major-functionalities)
 11. [API Base URLs](#api-base-urls)
 12. [Startup Sequence](#startup-sequence)
-13. [Version & Maintainer](#version--maintainer)
+13. [Deployment](#deployment)
+14. [Version & Maintainer](#version--maintainer)
 
 ---
 
