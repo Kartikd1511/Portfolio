@@ -1,4 +1,4 @@
-# ShineonCar Backend (FastAPI)
+# Shine on Car Backend (FastAPI)
 
 Backend platform for real-time car wash booking, intelligent washer matching, geolocation, document verification, and automated scheduling.
 
