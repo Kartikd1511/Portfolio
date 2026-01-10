@@ -327,8 +327,6 @@ The backend is deployed on an AWS EC2 instance.
 | Network Access | Public IPv4 + Security Group Rules |
 | File Storage | AWS S3 (documents, profile images) |
 | Notifications | Firebase Cloud Messaging (FCM) |
-| DNS / Domain | (Optional) |
-| SSL / HTTPS | (Optional if using Certbot / ALB) |
 
 ### Operational Notes
 
