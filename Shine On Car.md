@@ -1,4 +1,4 @@
-# ShinonCar Backend (FastAPI)
+# ShineonCar Backend (FastAPI)
 
 Backend platform for real-time car wash booking, intelligent washer matching, geolocation, document verification, and automated scheduling.
 
@@ -24,7 +24,7 @@ Backend platform for real-time car wash booking, intelligent washer matching, ge
 
 ## Project Overview
 
-ShinonCar is a comprehensive car wash booking platform backend built with FastAPI that connects users with professional car washers. The system features real-time booking management, geolocation-based washer discovery, push notifications, and automated scheduling capabilities.
+Shineoncar is a comprehensive car wash booking platform backend built with FastAPI that connects users with professional car washers. The system features real-time booking management, geolocation-based washer discovery, push notifications, and automated scheduling capabilities.
 
 ---
 
@@ -185,7 +185,7 @@ socketTimeout: 10 seconds
 
 ```json
 {
-  "name": "shinoncar-backend",
+  "name": "Shineoncar-backend",
   "script": "uvicorn",
   "args": "app.main:app --host 0.0.0.0 --port 8002 --workers 4 --loop uvloop",
   "interpreter": "python3.12",
@@ -233,10 +233,10 @@ socketTimeout: 10 seconds
 ## Environment Variables
 
 ```
-PYTHONPATH=/home/ubuntu/shinoncar-backend/app
+PYTHONPATH=/home/ubuntu/Shineoncar-backend/app
 AWS_ACCESS_KEY_ID=<configured>
 AWS_SECRET_ACCESS_KEY=<configured>
-AWS_BUCKET_NAME=shinoncar
+AWS_BUCKET_NAME=Shineoncar
 GOOGLE_PLACES_API_KEY=<configured>
 JWT_SECRET_KEY=<configured>
 ```
@@ -311,4 +311,4 @@ Static Files: /static
 
 **Last Updated:** January 2026  
 **Version:** 1.0.0  
-**Maintained By:** ShinonCar Development Team
+**Maintained By:** Shineoncar Development Team
