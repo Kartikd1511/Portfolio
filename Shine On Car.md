@@ -39,6 +39,8 @@ Shineoncar is a comprehensive car wash booking platform backend built with FastA
 | Database | MongoDB Atlas (Cloud) |
 | Authentication | JWT (PyJWT) |
 | Realtime | WebSocket |
+| CLoud | AWS EC2 |
+| Instance Type | t3.medium (Ubuntu) |
 | Process Manager | PM2 |
 | Server | Uvicorn + uvloop (4 workers) |
 | Storage | AWS S3 |
@@ -306,6 +308,34 @@ Static Files: /static
 6. Background cron job thread start
 7. Reminder scheduler async task start
 8. Uvicorn server start on port 8002
+
+---
+
+## Deployment
+
+The backend is deployed on an AWS EC2 instance.
+
+### Infrastructure Details
+
+| Component | Configuration |
+|---|---|
+| Cloud Provider | AWS |
+| Instance Type | t3.medium |
+| OS | Ubuntu |
+| Deployment Method | PM2 + Uvicorn |
+| Network Access | Public IPv4 + Security Group Rules |
+| File Storage | AWS S3 (documents, profile images) |
+| Notifications | Firebase Cloud Messaging (FCM) |
+| DNS / Domain | (Optional) |
+| SSL / HTTPS | (Optional if using Certbot / ALB) |
+
+### Operational Notes
+
+- PM2 manages process lifecycle, automatic restart, and memory thresholds.
+- Uvicorn (async workers) handles HTTP requests and WebSockets concurrently.
+- Security Groups restrict inbound ports to 80/443/8002 (project-specific).
+- AWS S3 acts as object storage for documents and images.
+- Cron jobs and schedulers run in-process for reminders and booking updates.
 
 ---
 
