@@ -165,40 +165,39 @@
 ---
 
 ## Environment Variables
-```ini
-PYTHONPATH=/path/to/imoot-ai-backend
-AWS_ACCESS_KEY_ID=<configured>
-AWS_SECRET_ACCESS_KEY=<configured>
-MONGO_URI=<configured>
-JWT_SECRET_KEY=<configured>
+- PYTHONPATH=/path/to/imoot-ai-backend
+- AWS_ACCESS_KEY_ID=<configured>
+- AWS_SECRET_ACCESS_KEY=<configured>
+- MONGO_URI=<configured>
+- JWT_SECRET_KEY=<configured>
 
-# Dependencies
+---
 
-## Core
-```ini
-fastapi==0.115.5
-uvicorn==0.32.0
-pymongo==4.10.1
-pydantic==2.6.1
-python-dotenv==1.0.1
+## Dependencies
 
-## AI/ML
-```ini
-langchain==0.3.7
-langchain-aws==0.1.0
-langchain-mongodb==0.2.0
+**Core**
+- fastapi==0.115.5
+- uvicorn==0.32.0
+- pymongo==4.10.1
+- pydantic==2.6.1
+- python-dotenv==1.0.1
 
-## Document Processing
-```ini
-pypdf==4.2.0
-pdfplumber==0.11.0
-beautifulsoup4==4.12.3
-tabula-py==2.9.2
-camelot-py==0.11.0
+**AI/ML**
+- langchain==0.3.7
+- langchain-aws==0.1.0
+- langchain-mongodb==0.2.0
 
-## Utilities
-```ini
-opencv-python==4.10.0
+**Document Processing**
+- pypdf==4.2.0
+- pdfplumber==0.11.0
+- beautifulsoup4==4.12.3
+- tabula-py==2.9.2
+- camelot-py==0.11.0
+
+**Utilities**
+- opencv-python==4.10.0
+
+---
 
 ## Version & Maintainer
 - **Last Updated**: January 2026
