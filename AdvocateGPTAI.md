@@ -47,6 +47,9 @@ AI Legal Assistant is a specialized backend platform built with FastAPI that pro
 | Process Manager | PM2 |
 | Server | Uvicorn (2 workers) |
 
+
+![AdvocateGPT](https://github.com/user-attachments/assets/527546fb-29f0-463c-87ad-b6a086b621c9)
+
 ### Key Technologies
 
 - **FastAPI** - Modern async web framework
@@ -205,8 +208,8 @@ Top P: 0.9
   {"role": "assistant", "content": [{"text": "response"}]}
 ]
 ```
-
-**Performance Optimizations**
+---
+## Performance Optimizations
 
 Response Generation
 
@@ -246,7 +249,7 @@ Error Handling
 - Detailed error logging
 
 ---
-**Deployment Configuration**
+## Deployment Configuration
 
 PM2 Ecosystem
 ```JSON
